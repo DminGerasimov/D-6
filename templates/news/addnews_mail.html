@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New news!</title>
+</head>
+<body>
+    <h2>{{ instance.chapter }}</h2>
+    <p> <a href="http://localhost:8000/news/{{ instance.id }}">{{ instance.text | truncatechars:50 }} </a></p>
+</body>
+</html>
